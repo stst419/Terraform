@@ -5,7 +5,7 @@ provider "aws" {
 }# create an instance
 resource "aws_instance" "linux_instance" {
   ami             = lookup(var.amis, var.region)
-  key_name        = var.keyName
+#  key_name        = var.keyName
   instance_type   = var.instanceType
 
 #  provisioner "file" {
