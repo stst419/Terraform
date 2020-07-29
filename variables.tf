@@ -1,14 +1,14 @@
 variable "aws_access_key" {
-default = "AKIA23S7KTW6M6QFIARK"
+type = string
 }
 variable "aws_secret_key" {
-default = "7DAhVqvCoXq+zFYA3C6vaV0oZKBvFPkcaFx5/JBP"
+type = string
 }
 variable "region" {
 default = "us-east-1"
 }
 variable "instanceType" {
-   default = "t2.micro"
+   type = string
 }
 variable "amis" {
   default = {
